@@ -24,6 +24,36 @@ public class Pagamento {
         this.data = data;
     }
 
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public Enum getForma() {
+        return forma;
+    }
+
+    public void setForma(Enum forma) {
+        this.forma = forma;
+    }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
 }
 
