@@ -5,23 +5,21 @@ import java.util.Date;
 public class Pagamento {
 
     private long id;
-    private Date data;
-    private float valor;
-    private Enum forma;
+    private float valorTotal;
+    private Enum tipoPagamento;
 
 
     public Pagamento(){
         this.id=0;
-        this.data=new Date();
-        this.valor=0;
-        this.forma= forma ;
+        this.valorTotal=0;
+        this.tipoPagamento=tipoPagamento;
     }
 
-    public Pagamento(long id, Enum forma, float valor, Date data) {
+    public Pagamento(long id, Enum tipoPagamento, float valorTotal, Date data) {
         this.id = id;
-        this.forma = forma;
-        this.valor = valor;
-        this.data = data;
+        this.tipoPagamento = tipoPagamento;
+        this.valorTotal = valorTotal;
+
     }
 
     public long getId() {
@@ -32,28 +30,20 @@ public class Pagamento {
         this.id = id;
     }
 
-    public Date getData() {
-        return data;
+    public Enum getTipoPagamento() {
+        return tipoPagamento;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setTipoPagamento(Enum tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 
-    public Enum getForma() {
-        return forma;
+    public float getValorTotal() {
+        return valorTotal;
     }
 
-    public void setForma(Enum forma) {
-        this.forma = forma;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-
-    public void setValor(float valor) {
-        this.valor = valor;
+    public void setValorTotal(float valorTotal) {
+        this.valorTotal = valorTotal;
     }
 }
 
